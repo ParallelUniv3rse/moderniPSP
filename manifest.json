@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Moderní PSP",
+  "version": "0.1.0",
+  "description": "Rozšíření přenášející web PSP.cz do 21. století.",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [{
+    "css": ["css/styles.css"],
+    "js": ["js/index.js"],
+    "matches": ["http://www.psp.cz/*", "http://psp.cz/*"]
+  }]
+}
